@@ -1,0 +1,130 @@
+2018-01-10 09:21:48 INFO  TestBase:72 - Launching chromebrowser...
+2018-01-10 09:21:48 INFO  TestBase:79 - Navigating to: http://automationpractice.com/index.php
+2018-01-10 09:21:48 INFO  WebEventListener:35 - Navigating to URL [http://automationpractice.com/index.php]
+2018-01-10 09:21:59 INFO  WebEventListener:40 - Navigatied already to URL [http://automationpractice.com/index.php]
+2018-01-10 09:21:59 INFO  CustomListener:97 - ########################################################################################
+2018-01-10 09:21:59 INFO  CustomListener:98 - ########################## Automation Test is [Running] ################################
+2018-01-10 09:21:59 INFO  CustomListener:131 - ==================================================================================
+2018-01-10 09:21:59 INFO  CustomListener:132 - ++++++++++++ Starting Testcase: [doValidLogin] ++++++++++++
+2018-01-10 09:21:59 INFO  CustomListener:133 - ==================================================================================
+2018-01-10 09:21:59 INFO  TC1001_VerifyLoginWithInvalidCredentials:56 - ========= Starting testcase: verifyLoginWithValidCredentials =========
+2018-01-10 09:21:59 INFO  BasePage:23 - Scrolling to the Element: [[[ChromeDriver: chrome on XP (88680b319af2d1acddd6c8df505d5728)] -> class name: login]]
+2018-01-10 09:22:00 INFO  WebEventListener:85 - Clicking on Element [[[ChromeDriver: chrome on XP (88680b319af2d1acddd6c8df505d5728)] -> class name: login]]
+2018-01-10 09:22:03 INFO  WebEventListener:90 - Clicked on Element [[[ChromeDriver: chrome on XP (88680b319af2d1acddd6c8df505d5728)] -> class name: login]]
+2018-01-10 09:22:03 INFO  WebElementControls:149 - Clicked on [[[ChromeDriver: chrome on XP (88680b319af2d1acddd6c8df505d5728)] -> class name: login]]
+2018-01-10 09:22:03 INFO  SignInPage:75 - clicked on the Sign In button and Object is: [[ChromeDriver: chrome on XP (88680b319af2d1acddd6c8df505d5728)] -> class name: login]
+2018-01-10 09:22:04 INFO  WebElementControls:89 - String [email1506004855261@yoyoyo.com] has been typed into [[[ChromeDriver: chrome on XP (88680b319af2d1acddd6c8df505d5728)] -> id: email]]
+2018-01-10 09:22:06 INFO  WebElementControls:89 - String [1234567890] has been typed into [[[ChromeDriver: chrome on XP (88680b319af2d1acddd6c8df505d5728)] -> id: passwd]]
+2018-01-10 09:22:38 INFO  WebEventListener:115 - Exception Occurrred [[Ljava.lang.StackTraceElement;@4eed46ee]
+2018-01-10 09:22:38 INFO  SignInPage:64 - clicked on the [Sign In] button and Object is: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='SubmitLogin']/span'
+2018-01-10 09:22:39 INFO  TC1001_VerifyLoginWithInvalidCredentials:62 - ========= Finished testcase: verifyLoginWithValidCredentials =========
+2018-01-10 09:22:39 INFO  CustomListener:67 - Test Case [doValidLogin] is [Passed] 
+2018-01-10 09:22:39 INFO  CustomListener:51 - Screenshot [PASSED_doValidLogin_10_01_2018_09_22_39.jpg] has been copied to [D:\Workspace\Auto\BeginAutomationMaven\screenshots\]
+2018-01-10 09:22:39 INFO  CustomListener:142 - ==================================================================================
+2018-01-10 09:22:39 INFO  CustomListener:143 - +++++++++++++++++++++ E-N-D [doValidLogin: PASSED] +++++++++++++++++++++
+2018-01-10 09:22:39 INFO  CustomListener:145 - ==================================================================================
+2018-01-10 09:22:39 INFO  CustomListener:89 - Report has been copied to [D:\Workspace\Auto\BeginAutomationMaven\reports\]
+2018-01-10 09:22:39 INFO  CustomListener:91 - ############################ Automation Test [E-N-D] ###################################
+2018-01-10 09:22:39 INFO  CustomListener:92 - ########################################################################################
+2018-01-10 09:26:13 INFO  TestBase:72 - Launching chromebrowser...
+2018-01-10 09:26:13 INFO  TestBase:79 - Navigating to: http://automationpractice.com/index.php
+2018-01-10 09:26:13 INFO  WebEventListener:35 - Navigating to URL [http://automationpractice.com/index.php]
+2018-01-10 09:26:25 INFO  WebEventListener:40 - Navigatied already to URL [http://automationpractice.com/index.php]
+2018-01-10 09:26:25 INFO  CustomListener:97 - ########################################################################################
+2018-01-10 09:26:25 INFO  CustomListener:98 - ########################## Automation Test is [Running] ################################
+2018-01-10 09:26:25 INFO  CustomListener:131 - ==================================================================================
+2018-01-10 09:26:25 INFO  CustomListener:132 - ++++++++++++ Starting Testcase: [doValidLogin] ++++++++++++
+2018-01-10 09:26:25 INFO  CustomListener:133 - ==================================================================================
+2018-01-10 09:26:25 INFO  TC1001_VerifyLoginWithInvalidCredentials:55 - ========= Starting testcase: verifyLoginWithValidCredentials =========
+2018-01-10 09:26:25 INFO  BasePage:23 - Scrolling to the Element: [[[ChromeDriver: chrome on XP (57bab4c178ceb46be21429ca337126da)] -> class name: login]]
+2018-01-10 09:26:26 INFO  WebEventListener:85 - Clicking on Element [[[ChromeDriver: chrome on XP (57bab4c178ceb46be21429ca337126da)] -> class name: login]]
+2018-01-10 09:26:29 INFO  WebEventListener:90 - Clicked on Element [[[ChromeDriver: chrome on XP (57bab4c178ceb46be21429ca337126da)] -> class name: login]]
+2018-01-10 09:26:29 INFO  WebElementControls:149 - Clicked on [[[ChromeDriver: chrome on XP (57bab4c178ceb46be21429ca337126da)] -> class name: login]]
+2018-01-10 09:26:29 INFO  SignInPage:75 - clicked on the Sign In button and Object is: [[ChromeDriver: chrome on XP (57bab4c178ceb46be21429ca337126da)] -> class name: login]
+2018-01-10 09:26:31 INFO  WebElementControls:89 - String [email1506004855261@yoyoyo.com] has been typed into [[[ChromeDriver: chrome on XP (57bab4c178ceb46be21429ca337126da)] -> id: email]]
+2018-01-10 09:26:31 INFO  SignInPage:62 - Entered password(in HashForm): -2054162789 into Password Textbox: [[ChromeDriver: chrome on XP (57bab4c178ceb46be21429ca337126da)] -> id: passwd]
+2018-01-10 09:27:03 INFO  WebEventListener:115 - Exception Occurrred [[Ljava.lang.StackTraceElement;@1d1f7216]
+2018-01-10 09:27:03 INFO  SignInPage:66 - clicked on the [Sign In] button and Object is: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='SubmitLogin']/span'
+2018-01-10 09:27:04 INFO  TC1001_VerifyLoginWithInvalidCredentials:61 - ========= Finished testcase: verifyLoginWithValidCredentials =========
+2018-01-10 09:27:04 INFO  CustomListener:67 - Test Case [doValidLogin] is [Passed] 
+2018-01-10 09:27:04 INFO  CustomListener:51 - Screenshot [PASSED_doValidLogin_10_01_2018_09_27_04.jpg] has been copied to [D:\Workspace\Auto\BeginAutomationMaven\screenshots\]
+2018-01-10 09:27:04 INFO  CustomListener:142 - ==================================================================================
+2018-01-10 09:27:04 INFO  CustomListener:143 - +++++++++++++++++++++ E-N-D [doValidLogin: PASSED] +++++++++++++++++++++
+2018-01-10 09:27:04 INFO  CustomListener:145 - ==================================================================================
+2018-01-10 09:27:04 INFO  CustomListener:89 - Report has been copied to [D:\Workspace\Auto\BeginAutomationMaven\reports\]
+2018-01-10 09:27:04 INFO  CustomListener:91 - ############################ Automation Test [E-N-D] ###################################
+2018-01-10 09:27:04 INFO  CustomListener:92 - ########################################################################################
+2018-01-10 14:43:12 INFO  TestBase:72 - Launching chromebrowser...
+2018-01-10 14:43:12 INFO  TestBase:79 - Navigating to: http://automationpractice.com/index.php
+2018-01-10 14:43:12 INFO  WebEventListener:35 - Navigating to URL [http://automationpractice.com/index.php]
+2018-01-10 14:43:28 INFO  WebEventListener:40 - Navigatied already to URL [http://automationpractice.com/index.php]
+2018-01-10 14:43:28 INFO  CustomListener:97 - ########################################################################################
+2018-01-10 14:43:28 INFO  CustomListener:98 - ########################## Automation Test is [Running] ################################
+2018-01-10 14:43:28 INFO  CustomListener:131 - ==================================================================================
+2018-01-10 14:43:28 INFO  CustomListener:132 - ++++++++++++ Starting Testcase: [doValidLogin] ++++++++++++
+2018-01-10 14:43:28 INFO  CustomListener:133 - ==================================================================================
+2018-01-10 14:43:28 INFO  BasePage:23 - Scrolling to the Element: [[[ChromeDriver: chrome on XP (ecc50bd8b5a3e9bbc617062e2c1ee6f5)] -> class name: login]]
+2018-01-10 14:43:29 INFO  WebEventListener:85 - Clicking on Element [[[ChromeDriver: chrome on XP (ecc50bd8b5a3e9bbc617062e2c1ee6f5)] -> class name: login]]
+2018-01-10 14:43:31 INFO  WebEventListener:90 - Clicked on Element [[[ChromeDriver: chrome on XP (ecc50bd8b5a3e9bbc617062e2c1ee6f5)] -> class name: login]]
+2018-01-10 14:43:31 INFO  WebElementControls:149 - Clicked on [[[ChromeDriver: chrome on XP (ecc50bd8b5a3e9bbc617062e2c1ee6f5)] -> class name: login]]
+2018-01-10 14:43:31 INFO  SignInPage:75 - clicked on the Sign In button and Object is: [[ChromeDriver: chrome on XP (ecc50bd8b5a3e9bbc617062e2c1ee6f5)] -> class name: login]
+2018-01-10 14:43:33 INFO  WebElementControls:89 - String [email1506004855261@yoyoyo.com] has been typed into [[[ChromeDriver: chrome on XP (ecc50bd8b5a3e9bbc617062e2c1ee6f5)] -> id: email]]
+2018-01-10 14:43:33 INFO  SignInPage:62 - Entered password(in HashForm): [-2054162789] into Password Textbox: [[ChromeDriver: chrome on XP (ecc50bd8b5a3e9bbc617062e2c1ee6f5)] -> id: passwd]
+2018-01-10 14:44:06 INFO  WebEventListener:115 - Exception Occurrred [[Ljava.lang.StackTraceElement;@1d1f7216]
+2018-01-10 14:44:06 INFO  SignInPage:66 - clicked on the [Sign In] button and Object is: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='SubmitLogin']/span'
+2018-01-10 14:44:06 INFO  CustomListener:67 - Test Case [doValidLogin] is [Passed] 
+2018-01-10 14:44:07 INFO  CustomListener:51 - Screenshot [PASSED_doValidLogin_10_01_2018_14_44_06.jpg] has been copied to [D:\Workspace\Auto\BeginAutomationMaven\screenshots\]
+2018-01-10 14:44:07 INFO  CustomListener:142 - ==================================================================================
+2018-01-10 14:44:07 INFO  CustomListener:143 - +++++++++++++++++++++ E-N-D [doValidLogin: PASSED] +++++++++++++++++++++
+2018-01-10 14:44:07 INFO  CustomListener:145 - ==================================================================================
+2018-01-10 14:44:07 INFO  CustomListener:89 - Report has been copied to [D:\Workspace\Auto\BeginAutomationMaven\reports\]
+2018-01-10 14:44:07 INFO  CustomListener:91 - ############################ Automation Test [E-N-D] ###################################
+2018-01-10 14:44:07 INFO  CustomListener:92 - ########################################################################################
+2018-01-10 18:01:15 INFO  CustomListener:97 - ########################################################################################
+2018-01-10 18:01:15 INFO  CustomListener:98 - ########################## Automation Test is [Running] ################################
+2018-01-10 18:01:15 INFO  CustomListener:89 - Report has been copied to [D:\Workspace\Auto\BeginAutomationMaven\reports\]
+2018-01-10 18:01:15 INFO  CustomListener:91 - ############################ Automation Test [E-N-D] ###################################
+2018-01-10 18:01:15 INFO  CustomListener:92 - ########################################################################################
+2018-01-10 18:02:23 INFO  CustomListener:97 - ########################################################################################
+2018-01-10 18:02:23 INFO  CustomListener:98 - ########################## Automation Test is [Running] ################################
+2018-01-10 18:02:24 INFO  CustomListener:89 - Report has been copied to [D:\Workspace\Auto\BeginAutomationMaven\reports\]
+2018-01-10 18:02:24 INFO  CustomListener:91 - ############################ Automation Test [E-N-D] ###################################
+2018-01-10 18:02:24 INFO  CustomListener:92 - ########################################################################################
+2018-01-10 18:07:43 INFO  TestBase:77 - Launching [firefox] browser!!!!
+2018-01-10 18:07:43 INFO  CustomListener:97 - ########################################################################################
+2018-01-10 18:07:43 INFO  CustomListener:98 - ########################## Automation Test is [Running] ################################
+2018-01-10 18:07:43 INFO  CustomListener:89 - Report has been copied to [D:\Workspace\Auto\DemoFramework\reports\]
+2018-01-10 18:07:43 INFO  CustomListener:91 - ############################ Automation Test [E-N-D] ###################################
+2018-01-10 18:07:43 INFO  CustomListener:92 - ########################################################################################
+2018-01-10 18:18:40 INFO  TestBase:77 - Launching [firefox] browser!!!!
+2018-01-10 18:19:02 INFO  CustomListener:97 - ########################################################################################
+2018-01-10 18:19:02 INFO  CustomListener:98 - ########################## Automation Test is [Running] ################################
+2018-01-10 18:19:03 INFO  CustomListener:89 - Report has been copied to [D:\Workspace\Auto\DemoFramework\reports\]
+2018-01-10 18:19:03 INFO  CustomListener:91 - ############################ Automation Test [E-N-D] ###################################
+2018-01-10 18:19:03 INFO  CustomListener:92 - ########################################################################################
+2018-01-11 13:37:54 INFO  TestBase:77 - Launching [chrome] browser!!!!
+2018-01-11 13:37:54 INFO  TestBase:84 - Navigating to: http://automationpractice.com/index.php
+2018-01-11 13:37:54 INFO  WebEventListener:35 - Navigating to URL [http://automationpractice.com/index.php]
+2018-01-11 13:38:05 INFO  WebEventListener:40 - Navigatied already to URL [http://automationpractice.com/index.php]
+2018-01-11 13:38:05 INFO  CustomListener:98 - ########################################################################################
+2018-01-11 13:38:05 INFO  CustomListener:99 - ########################## Automation Test is [Running] ################################
+2018-01-11 13:38:05 INFO  CustomListener:132 - ==================================================================================
+2018-01-11 13:38:05 INFO  CustomListener:133 - ++++++++++++ Starting Testcase: [doValidLogin] ++++++++++++
+2018-01-11 13:38:05 INFO  CustomListener:134 - ==================================================================================
+2018-01-11 13:38:05 INFO  BasePage:23 - Scrolling to the Element: [[[ChromeDriver: chrome on XP (f872ca8f9d3d760b5d4cd47f8a541edb)] -> class name: login]]
+2018-01-11 13:38:06 INFO  WebEventListener:85 - Clicking on Element [[[ChromeDriver: chrome on XP (f872ca8f9d3d760b5d4cd47f8a541edb)] -> class name: login]]
+2018-01-11 13:38:09 INFO  WebEventListener:90 - Clicked on Element [[[ChromeDriver: chrome on XP (f872ca8f9d3d760b5d4cd47f8a541edb)] -> class name: login]]
+2018-01-11 13:38:09 INFO  WebElementControls:149 - Clicked on [[[ChromeDriver: chrome on XP (f872ca8f9d3d760b5d4cd47f8a541edb)] -> class name: login]]
+2018-01-11 13:38:09 INFO  SignInPage:75 - clicked on the Sign In button and Object is: [[ChromeDriver: chrome on XP (f872ca8f9d3d760b5d4cd47f8a541edb)] -> class name: login]
+2018-01-11 13:38:11 INFO  WebElementControls:89 - String [email1506004855261@yoyoyo.com] has been typed into [[[ChromeDriver: chrome on XP (f872ca8f9d3d760b5d4cd47f8a541edb)] -> id: email]]
+2018-01-11 13:38:11 INFO  SignInPage:62 - Entered password(in HashForm): [-2054162789] into Password Textbox: [[ChromeDriver: chrome on XP (f872ca8f9d3d760b5d4cd47f8a541edb)] -> id: passwd]
+2018-01-11 13:38:44 INFO  WebEventListener:115 - Exception Occurrred [[Ljava.lang.StackTraceElement;@1d1f7216]
+2018-01-11 13:38:44 INFO  SignInPage:66 - clicked on the [Sign In] button and Object is: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='SubmitLogin']/span'
+2018-01-11 13:38:44 INFO  CustomListener:68 - Test Case [doValidLogin] is [Passed] 
+2018-01-11 13:38:44 INFO  CustomListener:52 - Screenshot [PASSED_doValidLogin_11_01_2018_13_38_44.jpg] has been copied to [D:\Workspace\Auto\DemoFramework\screenshots\]
+2018-01-11 13:38:44 INFO  CustomListener:143 - ==================================================================================
+2018-01-11 13:38:44 INFO  CustomListener:144 - +++++++++++++++++++++ E-N-D [doValidLogin: PASSED] +++++++++++++++++++++
+2018-01-11 13:38:44 INFO  CustomListener:146 - ==================================================================================
+2018-01-11 13:38:45 INFO  CustomListener:90 - Report has been copied to [D:\Workspace\Auto\DemoFramework\reports\D:\Workspace\Auto\DemoFramework\reports\Report_11_01_2018_01_37_51.html]
+2018-01-11 13:38:45 INFO  CustomListener:92 - ############################ Automation Test [E-N-D] ###################################
+2018-01-11 13:38:45 INFO  CustomListener:93 - ########################################################################################

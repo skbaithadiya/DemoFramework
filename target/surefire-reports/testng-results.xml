@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Page Object test example" duration-ms="48285" started-at="2017-12-01T02:56:26Z" finished-at="2017-12-01T02:57:15Z">
+    <groups>
+    </groups>
+    <test name="Test Case 1" duration-ms="48285" started-at="2017-12-01T02:56:26Z" finished-at="2017-12-01T02:57:15Z">
+      <class name="com.AutoMaven.homePage.TC1002_ContactCustomerCare">
+        <test-method status="PASS" signature="verifySendingMessageToCustomerCareWithoutAttachment()[pri:0, instance:com.AutoMaven.homePage.TC1002_ContactCustomerCare@8b87145]" name="verifySendingMessageToCustomerCareWithoutAttachment" duration-ms="39747" started-at="2017-12-01T09:56:35Z" finished-at="2017-12-01T09:57:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySendingMessageToCustomerCareWithoutAttachment -->
+      </class> <!-- com.AutoMaven.homePage.TC1002_ContactCustomerCare -->
+      <class name="com.AutoMaven.signInPage.TC1001_VerifyLoginWithInvalidCredentials">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.AutoMaven.signInPage.TC1001_VerifyLoginWithInvalidCredentials@5fcd892a]" name="init" is-config="true" duration-ms="11582" started-at="2017-12-01T09:56:15Z" finished-at="2017-12-01T09:56:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationpractice.com/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setSignInPage(java.lang.String)[pri:0, instance:com.AutoMaven.signInPage.TC1001_VerifyLoginWithInvalidCredentials@5fcd892a]" name="setSignInPage" is-config="true" duration-ms="23" started-at="2017-12-01T09:56:26Z" finished-at="2017-12-01T09:56:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//resource//dataFile.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setSignInPage -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.AutoMaven.homePage.TC1002_ContactCustomerCare@8b87145]" name="setup" is-config="true" duration-ms="3" started-at="2017-12-01T09:56:26Z" finished-at="2017-12-01T09:56:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//resource//dataFile.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="doInvalidLogin()[pri:0, instance:com.AutoMaven.signInPage.TC1001_VerifyLoginWithInvalidCredentials@5fcd892a]" name="doInvalidLogin" duration-ms="8497" started-at="2017-12-01T09:56:26Z" finished-at="2017-12-01T09:56:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doInvalidLogin -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.AutoMaven.signInPage.TC1001_VerifyLoginWithInvalidCredentials@5fcd892a]" name="end" is-config="true" duration-ms="552" started-at="2017-12-01T09:57:15Z" finished-at="2017-12-01T09:57:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.AutoMaven.signInPage.TC1001_VerifyLoginWithInvalidCredentials -->
+    </test> <!-- Test Case 1 -->
+  </suite> <!-- Page Object test example -->
+</testng-results>

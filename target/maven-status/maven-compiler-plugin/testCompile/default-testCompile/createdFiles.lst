@@ -1,0 +1,6 @@
+com\AutoMaven\productDetailsPage\BuyProductTc.class
+com\AutoMaven\signInPage\TC1001_VerifyLoginWithInvalidCredentials.class
+com\AutoMaven\homePage\TC1002_ContactCustomerCare.class
+com\AutoMaven\productDetailsPage\TCPD1001_CheckProduct.class
+com\AutoMaven\homePage\TCSP1001_VerifyCreateNewAccount.class
+com\AutoMaven\productDetailsPage\Scenario5_CompareItems.class

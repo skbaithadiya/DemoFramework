@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="url" value="http://automationpractice.com/index.php"></parameter>
+<parameter name="excelFilePath" value="//resource//dataFile.xlsx"></parameter>
+	<listeners>
+		<listener class-name="com.AutoMaven.CustomListener.CustomListener" />
+	</listeners>
+	<test name="Test Case 1">
+		<classes>
+			<class name="com.AutoMaven.signInPage.TC1001_VerifyLoginWithInvalidCredentials" />
+			<class name ="com.AutoMaven.homePage.TC1002_ContactCustomerCare" />
+		</classes>
+	</test>
+</suite>   
