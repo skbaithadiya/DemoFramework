@@ -50,8 +50,8 @@ public class SearchProductPage extends BasePage {
 	}
 
 	/***
-	 * This will navigate to the Product Page
-	 * @param productTitle
+	 * This will navigate to the specific Product Page
+	 * @param productTitle name of the Product
 	 */
 	public void goToProduct(String productTitle) {
 		try {
@@ -63,23 +63,36 @@ public class SearchProductPage extends BasePage {
 			e.printStackTrace();
 		}
 	}
-	
+	/***
+	 * this will scroll to the product, product must be available in the page and loaded
+	 * @param productTitle
+	 */
 	public void scrollToProduct(String productTitle){
 		WebElement element = findProduct(productTitle);
 		scrollToElement(driver,element);
 	}
 
+	/***
+	 * to get the product type's name
+	 * @return
+	 */
 	public String titleOfProductType() {
 		String sValue = productTypeTitle.getText().trim().toLowerCase();
 		return sValue;
 	}
 
+	/***
+	 * By calling this method will add the selected product to the cart
+	 */
 	public void addToCart() {
 		if (addToCartButton.isDisplayed() || addToCartButton.isEnabled()) {
 			addToCartButton.click();
 		}
 	}
 
+	/***
+	 * By calling this method will navigate to Check Out Page
+	 */
 	public void proceedToCheckOut() {
 		elementCheckIsClickable(proceedToCheckOutButton).click();
 

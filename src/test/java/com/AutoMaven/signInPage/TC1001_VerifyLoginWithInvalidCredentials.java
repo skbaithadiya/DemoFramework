@@ -16,7 +16,6 @@ import com.AutoMaven.HomePageElements.HomePage;
 import com.AutoMaven.HomePageElements.SignInPage;
 import com.AutoMaven.ProductPageElements.SearchProductPage;
 
-import example.example;
 
 public class TC1001_VerifyLoginWithInvalidCredentials extends TestBase {
 
