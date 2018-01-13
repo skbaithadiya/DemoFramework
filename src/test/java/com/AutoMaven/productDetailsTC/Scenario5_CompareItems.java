@@ -1,4 +1,4 @@
-package com.AutoMaven.productDetailsPage;
+package com.AutoMaven.productDetailsTC;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeTest;

@@ -1,4 +1,4 @@
-package com.AutoMaven.homePage;
+package com.AutoMaven.homeTC;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
