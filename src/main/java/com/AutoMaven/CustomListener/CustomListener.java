@@ -86,26 +86,42 @@ public class CustomListener extends TestBase implements ITestListener {
 		}
 	}
 
+	/***
+	 * this method is called from ExcelReader Class and it will help to write
+	 * Test Results to the Excel Data file
+	 * @param SheetName
+	 * @param TestcaseName
+	 * @param result
+	 */
 	public void setResultIntoExcelFile(String SheetName, String TestcaseName, String result) {
 		excel.excelDataWriter(SheetName, TestcaseName, "Result", result);
 	}
 
+	/***
+	 * things need to do after executing all the test suites (or testcases) is defined here
+	 * it will set the result of testcase after execution to the Excel DataFile
+	 */
 	public void onFinish(ITestContext arg0) {
 		extent.flush();
 		log.info("Report has been copied to [" + extentReportPath+".html" + "]");
 //		use below for windows
 //		log.info("Report has been copied to [" + System.getProperty("user.dir") + "\\reports\\"+extentReportPath+".html" + "]");
-
 		log.info("############################ Automation Test [E-N-D] ###################################");
 		log.info("########################################################################################");
 
 	}
 
+	/***
+	 * things need to do before executing all the test suites (or testcases) is defined here
+	 */
 	public void onStart(ITestContext testcase) {
 		log.info("########################################################################################");
 		log.info("########################## Automation Test is [Running] ################################");
 	}
 
+	/***
+	 * If testcase is failed but few Steps after successful, this method will be called
+	 */
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		getResult(result);
 		takeScreenshot(result.getMethod().getMethodName());
@@ -116,6 +132,9 @@ public class CustomListener extends TestBase implements ITestListener {
 
 	}
 
+	/***
+	 * when testcase is failed this method will be called
+	 */
 	public void onTestFailure(ITestResult result) {
 		getResult(result);
 		takeScreenshot("FAILED_"+result.getMethod().getMethodName());
@@ -126,6 +145,9 @@ public class CustomListener extends TestBase implements ITestListener {
 
 	}
 
+	/***
+	 * when testcase is skipped this method will be called
+	 */
 	public void onTestSkipped(ITestResult result) {
 		getResult(result);
 		log.info("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
@@ -134,6 +156,9 @@ public class CustomListener extends TestBase implements ITestListener {
 
 	}
 
+	/***
+	 * this method will be called just before start executing of any testcase
+	 */
 	public void onTestStart(ITestResult result) {
 
 		log.info("==================================================================================");
@@ -144,6 +169,10 @@ public class CustomListener extends TestBase implements ITestListener {
 
 	}
 
+	/***
+	 * this method will be called just after finish executing of any testcase
+	 * But only If testcase is Passed
+	 */
 	public void onTestSuccess(ITestResult result) {
 		getResult(result);
 		takeScreenshot("PASSED_"+result.getMethod().getMethodName());

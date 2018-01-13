@@ -37,7 +37,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	}
 
 	public void afterNavigateTo(String url, WebDriver driver) {
-		log.info("Navigatied already to URL ["+url+"]");
+		log.info("Navigated already to URL ["+url+"]");
 		
 	}
 
@@ -111,6 +111,9 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		
 	}
 
+	/***
+	 * throw the Exception during runtime
+	 */
 	public void onException(Throwable throwable, WebDriver driver) {
 		log.info("Exception Occurrred ["+throwable.getStackTrace()+"]");
 		

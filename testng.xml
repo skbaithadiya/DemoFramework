@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Page Object test example">
-	<parameter name="browser" value="firefox"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
 	<parameter name="url" value="http://automationpractice.com/index.php"></parameter>
 	<parameter name="excelFilePath" value="/resource/dataFile.xlsx"></parameter>
 	<!-- use below for Windows -->

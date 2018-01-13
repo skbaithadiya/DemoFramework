@@ -42,11 +42,19 @@ public class ContactUsPage extends BasePage{
 		PageFactory.initElements(driver, this);
 	}
 
+	/***
+	 * get page title of the Contact Us Page
+	 * @return
+	 */
 	public String getPageTitle() {
 		String sValue = pageTitle.getText().toLowerCase().trim();
 		return sValue;
 	}
 
+	/***
+	 * get the success message after sending any message to be Customer Service
+	 * @return
+	 */
 	public String getSuccessMessage() {
 		String sValue=successMesssage.getText().toLowerCase();
 		log.info("returning success message as: "+sValue);
