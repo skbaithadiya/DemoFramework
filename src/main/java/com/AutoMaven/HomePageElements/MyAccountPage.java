@@ -19,6 +19,9 @@ public class MyAccountPage extends BasePage{
 		PageFactory.initElements(driver, this);
 	}
 	
+	/***
+	 * By calling this method will navigate to My Wishlist Page
+	 */
 	public void goToMyWishlist(){
 		waitForElementVisible(driver, myWishlistButton);
 		scrollToElement(driver, myWishlistButton);

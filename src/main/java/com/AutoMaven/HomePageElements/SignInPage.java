@@ -66,6 +66,10 @@ public class SignInPage extends BasePage {
 		log.info("clicked on the [Sign In] button and Object is: " + submitButton.toString());
 	}
 
+	/***
+	 * this method will return Login Error Text 
+	 * @return String Login Error
+	 */
 	public String getLoginErrorText() {
 		log.info("Error message is: " + errorTextLogin.getText());
 		action.highLight(errorTextLogin, driver);
@@ -73,12 +77,22 @@ public class SignInPage extends BasePage {
 		
 	}
 
+	/***
+	 * this will navigate to Create Account Page. 
+	 * Create Account Page cannot will navigated without verifying valid email address
+	 * @param emailToBeCreated email id which will be use later to create new account
+	 */
 	public void goToCreateAccountPage(String emailToBeCreated) {
 		emailCreate.clear();
 		emailCreate.sendKeys(emailToBeCreated);
 		submitCreateBtn.click();
 	}
 
+	/***
+	 * this will be used in Assertion after Login Successfully
+	 * it will check if Sign Out Button is present or not
+	 * @return true/false
+	 */
 	public boolean isSignOutButtonPresent() {
 		if (signOutButton.isDisplayed() || signOutButton.isEnabled()) {
 			action.highLight(signOutButton, driver);

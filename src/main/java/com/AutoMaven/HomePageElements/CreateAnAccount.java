@@ -132,6 +132,33 @@ public class CreateAnAccount extends BasePage {
 		return element;
 	}
 
+	/***
+	 * This method will be use to create New Account
+	 * @param title
+	 * @param firstName
+	 * @param lastName
+	 * @param emailId
+	 * @param password
+	 * @param day
+	 * @param month
+	 * @param year
+	 * @param needNewsLetter
+	 * @param needSpecialOffers
+	 * @param afirstName
+	 * @param alastName
+	 * @param companyName
+	 * @param address1
+	 * @param address2
+	 * @param city
+	 * @param state
+	 * @param postalCode
+	 * @param country
+	 * @param additionalInfo
+	 * @param homePhone
+	 * @param mobile
+	 * @param aliasAddress
+	 * @throws InterruptedException
+	 */
 	public void createNewAccount(String title, String firstName, String lastName, String emailId, String password,
 			String day, String month, String year, String needNewsLetter, String needSpecialOffers, String afirstName,
 			String alastName, String companyName, String address1, String address2, String city, String state,
@@ -165,6 +192,23 @@ public class CreateAnAccount extends BasePage {
 
 	}
 
+	/***
+	 * this method will be use during Making order if User wants to update Delivery address
+	 * @param afirstName
+	 * @param alastName
+	 * @param companyName
+	 * @param address1
+	 * @param address2
+	 * @param city
+	 * @param state
+	 * @param postalCode
+	 * @param country
+	 * @param additionalInfo
+	 * @param homePhone
+	 * @param mobile
+	 * @param aliasAddress
+	 * @throws InterruptedException
+	 */
 	public void updateDeliveryAddress(String afirstName, String alastName, String companyName, String address1,
 			String address2, String city, String state, String postalCode, String country, String additionalInfo,
 			String homePhone, String mobile, String aliasAddress) throws InterruptedException {

@@ -49,11 +49,15 @@ public class SearchProductPage extends BasePage {
 		return element;
 	}
 
+	/***
+	 * This will navigate to the Product Page
+	 * @param productTitle
+	 */
 	public void goToProduct(String productTitle) {
 		try {
 			WebElement element = findProduct(productTitle);
 			scrollToElement(driver,element);
-			element.click();
+			clickButton(driver, element);
 		} catch (Exception e) {
 			log.error("element is not clikable yet!");
 			e.printStackTrace();

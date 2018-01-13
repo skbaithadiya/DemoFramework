@@ -67,6 +67,9 @@ public class HomePage extends BasePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/***
+	 * By calling this method will navigate to SignIn Page
+	 */
 	public void clickSignInButton() {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(signInButton));
@@ -76,11 +79,19 @@ public class HomePage extends BasePage {
 
 	}
 
+	/***
+	 * By calling this method will click on Sign Out Button present on HomePage
+	 * this will Sign Out the current Logged in Account
+	 */
 	public void clickSignOutButton() {
 		clickButton(driver, signOutButton);
 		log.info("Clicked on Sign Out button and Object is:" + signOutButton.toString());
 	}
 
+	/***
+	 * By calling this method will navigate to Tshirts Category
+	 * @throws InterruptedException
+	 */
 	public void goToTshirts() throws InterruptedException {
 		if (tshirtHeader.isDisplayed() || tshirtHeader.isEnabled()) {
 			clickButton(driver, tshirtHeader);
@@ -88,20 +99,36 @@ public class HomePage extends BasePage {
 		}
 	}
 
+	/***
+	 * By calling this method will navigate to Women Category
+	 */
 	public void goToWomen() {
 		clickButton(driver, womenHeader);
 	}
 
+	/***
+	 * By calling this method will navigate to Contact Us Page
+	 */
 	public void clickContactUsButton() {
 		checkElementIsClickable(driver, contactUsButton);
 		clickButton(driver, contactUsButton);
 	}
 
+	/***
+	 * this method is to get the User Account Name after login
+	 * @param userName
+	 * @return
+	 */
 	public WebElement userAccount(String userName) {
 		WebElement element = driver.findElement(By.xpath("//span[contains(text(),'" + userName + "')]"));
 		return element;
 	}
 
+	/***
+	 * By calling this method will navigate to My Account Page
+	 * @param userName
+	 * @throws InterruptedException
+	 */
 	public void goToMyAccountPage(String userName) throws InterruptedException {
 		Thread.sleep(2000);
 		WebElement element = userAccount(userName);
@@ -109,21 +136,33 @@ public class HomePage extends BasePage {
 		clickButton(driver, userAccount(userName));
 	}
 
+	/***
+	 * By calling this method, it will click on the 'Add To Cart' Button
+	 */
 	public void clickAddToCartButton() {
 		scrollToElement(driver, addCartButton());
 		clickButton(driver, addCartButton());
 	}
 
+	/***
+	 * this method will Hover on 'My Cart'
+	 */
 	public void hoverMyCart() {
 		scrollToElement(driver, goToCartButton);
 		Actions action = new Actions(driver);
 		action.moveToElement(goToCartButton).build().perform();
 	}
 
+	/***
+	 * this method will navigate to HomePage from any page
+	 */
 	public void goToHomePage() {
 		clickButton(driver, homePageLogo);
 	}
 
+	/***
+	 * By calling this method will take to 'Women > Top > Tshirt' Category
+	 */
 	public void goToWomenTopTshirt() {
 		scrollToElement(driver, womenHeader);
 		System.out.println("scrolling done");
@@ -201,6 +240,10 @@ public class HomePage extends BasePage {
 	}
 	
 
+	/***
+	 * this method will return 'Add to Cart' button
+	 * @return WebElement 'Add to Cart'
+	 */
 	private WebElement addCartButton() {
 		WebElement addCartButton = null;
 		List<WebElement> e = driver.findElements(By.xpath("//a[contains(@title,'Add to cart')]"));
@@ -215,6 +258,10 @@ public class HomePage extends BasePage {
 		return addCartButton;
 	}
 
+	/***
+	 * this method will return 'Delete' button on Cart
+	 * @return WebElement 'Delete' Button
+	 */
 	private WebElement deleteProductButtonCart() {
 		WebElement deleteButton = null;
 		List<WebElement> e = driver.findElements(By.xpath("//span[contains(@class,'remove_link')]"));
@@ -227,6 +274,10 @@ public class HomePage extends BasePage {
 		return deleteButton;
 	}
 
+	/***
+	 * this is hardcoded method and will delete the First product available in the cart
+	 * TODO: it will be removed later
+	 */
 	public void deleteFirstProductinCart() {
 		clickButton(driver, deleteProductButtonCart());
 	}

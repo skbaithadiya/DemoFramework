@@ -40,35 +40,55 @@ public class HomeFiltersPage extends BasePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/***
+	 * this method will sort the product listing based on passed Option
+	 * @param option sorting option for showing product list
+	 */
 	public void selectSortBy(String option) {
 		selectByVisibleTextFromDropDownBox(driver, sortByDropdown, option);
 	}
 
+	/***
+	 * By calling this method will change the product listing page to Grid View
+	 */
 	public void gridView() {
 		clickButton(driver, gridViewButton);
 	}
 
+	/***
+	 * By calling this method will change the product listing page to List View
+	 */
 	public void listView() {
 		clickButton(driver, listViewButton);
 	}
 
+	/***
+	 * this method is to get the Minimum price on Filters on the Product Page
+	 * @param price min price to set
+	 * @return min price in double
+	 */
 	private Double getMinPrice(String price) {
 		String originalValue = priceRange.getText().trim();
 		String[] splittedValue = originalValue.split("[-]");
 		String minValue$ = splittedValue[0];
 		String minValue = minValue$.replaceAll("[$]", "").trim();
 		// System.out.println("min value is: " + minValue);
-		Double returnMaxPriceFromSlider = Double.valueOf(minValue);
-		return returnMaxPriceFromSlider;
+		Double returnMinPriceFromSlider = Double.valueOf(minValue);
+		return returnMinPriceFromSlider;
 	}
 
+	/***
+	 * this method is to get the Maximum price on Filters on the Product Page
+	 * @param price
+	 * @return max price in double
+	 */
 	private String getMaxPrice(String price) {
 		String originalValue = priceRange.getText().trim();
 		String[] splittedValue = originalValue.split("[-]");
 		String maxValue$ = splittedValue[1];
 		String maxValue = maxValue$.replaceAll("[$]", "").trim();
 		// System.out.println("max value is: " + maxValue);
-		// Double returnMinPriceFromSlider = Double.valueOf(maxValue);
+		// Double returnMaxPriceFromSlider = Double.valueOf(maxValue);
 		return maxValue;
 	}
 

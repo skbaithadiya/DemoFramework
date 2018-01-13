@@ -55,13 +55,22 @@ public class ProductDetailsPage extends BasePage {
 		selectByVisibleTextFromDropDownBox(driver, sizeDropDownBox, size);
 	}
 
+	/***
+	 * this method will dynamically find the Colors present in Filters on Product Detail Page
+	 * @param colorName
+	 * @return
+	 */
 	public WebElement color(String colorName) {
 		WebElement element = driver.findElement(By.xpath("//*[contains(@title,'" + colorName + "')]"));
 		return element;
 	}
 
-
-
+	/***
+	 * it will select the Color passed as parameter on Product Detail Page
+	 * it will also check if color is already selected
+	 * If color is not present in the page it will Log the Error message but wont stop execution
+	 * @param colorName name of the color to select
+	 */
 	public void selectColor(String colorName) {
 		if (color(colorName).isDisplayed() || color(colorName).isEnabled()) {
 			if (!color(colorName).isSelected()) {
@@ -71,9 +80,18 @@ public class ProductDetailsPage extends BasePage {
 				log.info(colorName + " is already selected.");
 				// System.out.println("Element is selected already");
 			}
+		} else {
+			log.error("["+colorName +"] color is not present in the Page");
 		}
 	}
 
+	/***
+	 * this method will add product to Wishlist/Cart 
+	 * @param option wishlist/cart
+	 * @param quantity 
+	 * @param size
+	 * @param color
+	 */
 	public void addProductTo(String option, String quantity, String size, String color) {
 		inputIntoTextbox(driver, quantityTextBox, quantity);
 		selectSize(size);
@@ -92,13 +110,20 @@ public class ProductDetailsPage extends BasePage {
 
 	}
 	
+	/***
+	 * this will click on Add Product to cart button
+	 */
 	public void addProductToCart(){
 		scrollToElement(driver, addToCartButton);
 		checkElementIsClickable(driver,addToCartButton);
-		addToCartButton.click();
+		clickButton(driver, addToCartButton);
 		log.info("Clicked on Add to Cart Button.");
 	}
 
+	/***
+	 * get the Error Message on the Product Details Page
+	 * @return
+	 */
 	public String fancyError() {
 		String text = "";
 		checkElementIsVisible(errorForWishList);
@@ -114,6 +139,9 @@ public class ProductDetailsPage extends BasePage {
 		element = wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
+	/***
+	 * it will close the Message shown on Product Details Page
+	 */
 	public void closeFancyMessage() {
 		checkElementIsVisible(errorForWishList);
 		closeError.click();
