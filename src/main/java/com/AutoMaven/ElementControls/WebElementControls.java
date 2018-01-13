@@ -40,7 +40,7 @@ public class WebElementControls {
 	}
 
 	/***
-	 * Send keys to the textbox (with time to stop execution)
+	 * Send keys to the textbox (with time to pause execution)
 	 * 
 	 * @param element
 	 *            WebElement
@@ -114,6 +114,12 @@ public class WebElementControls {
 		log.info("Selected the [" + element.toString() + "] by value: [" + value + "]");
 	}
 
+	/***
+	 * to select value from Dropdown WebElement by visible text
+	 * @param driver
+	 * @param element Dropdown box
+	 * @param value value which need to be visible and then to be selected
+	 */
 	protected void selectByVisibleTextFromDropDownBox(WebDriver driver, WebElement element, String value) {
 		Select dropdown = new Select(element);
 		dropdown.selectByVisibleText(value);
@@ -121,6 +127,11 @@ public class WebElementControls {
 		log.info("Selected the [" + element.toString() + "] by visible text: [" + value + "]");
 	}
 
+	/***
+	 * this method is to put wait until passed WebElement is visible
+	 * @param driver
+	 * @param element
+	 */
 	protected void waitForElementVisible(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
@@ -129,6 +140,11 @@ public class WebElementControls {
 		// return element;
 	}
 
+	/***
+	 * this method is to check if passed WebElement is clickable, it will wait for element to be clikable upto 30 seconds
+	 * @param driver
+	 * @param element
+	 */
 	protected void checkElementIsClickable(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.elementToBeClickable(element));

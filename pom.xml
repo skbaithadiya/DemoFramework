@@ -4,11 +4,11 @@
 
 
 	<groupId>com.practice.selenium</groupId>
-	<artifactId>BeginAutomationMaven</artifactId>
+	<artifactId>DemoFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>BeginAutomationMaven</name>
+	<name>DemoFramework</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
